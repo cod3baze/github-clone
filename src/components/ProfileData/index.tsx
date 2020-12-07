@@ -28,28 +28,30 @@ const ProfileData: React.FC<Props> = ({
   return (
     <Container>
       <Flex>
-        <Avatar source={avatarURL} alt={username}/>
+        <Avatar draggable={false} src={avatarURL} alt={username}/>
 
         <div>
           <h1>{name}</h1>
           <h2>{username}</h2>
         </div>
+      </Flex>
 
-        <Row>
-          <li>
-            <PeopleIcon />
+      <Row>
+        <li>
+          <PeopleIcon />
 
-            <b>{followers}</b>
-            <span>followers</span>
-            <span>*</span>
-          </li>
-          <li>
-            <b>{following}</b>
-            <span>following</span>
-          </li>
-        </Row>
+          <b>{followers}</b>
+          <span>followers</span>
+          <span>·</span>
+        </li>
 
-        <Column>
+        <li>
+          <b>{following}</b>
+          <span>following</span>
+        </li>
+      </Row>
+
+      <Column>
           {company && (
             <li>
               <CompanyIcon />
@@ -75,7 +77,7 @@ const ProfileData: React.FC<Props> = ({
             </li>
           )}
         </Column>
-      </Flex>
+      
     </Container>
   );
 }
