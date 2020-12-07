@@ -22,6 +22,12 @@ const Profile: React.FC = () => {
 
   return (
   <Container>
+    <Tab className="desktop">
+      <TabContent />
+
+      <span className="line"></span>
+    </Tab>
+
     <Main>
       <LeftSide>
         <ProfileData
