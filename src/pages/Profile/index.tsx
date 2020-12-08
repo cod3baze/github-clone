@@ -23,7 +23,10 @@ const Profile: React.FC = () => {
   return (
   <Container>
     <Tab className="desktop">
-      <TabContent />
+      <div className="wrapper">
+        <span className="offset"></span>
+        <TabContent />
+      </div>
 
       <span className="line"></span>
     </Tab>
