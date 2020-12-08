@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Footer from './components/Footer';
 
 // import { Container } from './styles';
 
@@ -20,7 +21,7 @@ const App: React.FC = () => {
         <Route path="/:username/:reponame" element={<Repo />} />
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
 
       <GlobalStyles />
     </BrowserRouter>
