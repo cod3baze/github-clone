@@ -12,7 +12,12 @@ export const GithubLogo = styled(FaGithub)`
   fill: var(--logo);
   width: 32px;
   height: 32px;
-  flex-shrink: 0; 
+  flex-shrink: 0;
+
+  cursor: pointer;
+  &:hover {
+    opacity: .7;
+  }
 `;
 
 export const  SearchForm = styled.form`
